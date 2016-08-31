@@ -34,7 +34,7 @@ Go back to the original checked out folder and copy the *theme.css* file. Now ad
 
 Go to the *.htm* you created and it should load the page (with lots of elements missing that have to be loaded in externally). However you should be able to use test all CSS you write on this page!
 
-#global files
+#Explaination of files
 
 ##frontend.html 
 is the code that will be embeded into the webpage. It contains functions that will implement all the functionality that a designer requests per page. The purpose of this code is to either create new elements or hide elements that exist currently or to apply classes to exisiting elements. You should not use Javascript for any other purpose!
@@ -46,6 +46,11 @@ This decision was made to make the code alot more readable and to ensure modular
 
 ##lightbox.html
 This code should be embeded in a seperate HTML block.
+
+##instances
+Create instances of courses here e.g (Janek_sandbox). Within that folder add the 'Course_[your course]' html file and theme.css. 
+
+**Don't add the other 'Course_[your course] _files' here as it will make the repo massive** - Just keep them on your own computer.
 
 ##assets
 Store assets that will be used across courses here (images/icons)
