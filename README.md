@@ -1,10 +1,10 @@
 #How to create a new CSS file for a page
 
-To begin you must have this repositry either checked out or at the very least download the zip and then have a developer (Simon, Lousie or Paul) help you at a later stage.
+To begin you must have this repositry either checked out or at the very least download the zip and then have a developer (Simon, Louise or Paul) help you at a later stage.
 
 ##Create a new folder with your page
 
-Go inside the 'instances' folder and then create a new folder with the name of your course
+Go inside the 'instances' folder and then create a new folder with the name of your course.
 
 ##Copy the frontend.html
 
