@@ -34,7 +34,7 @@ Go back to the original checked out folder and copy the *theme.css* file. Now ad
 
 Go to the *.htm* you created and it should load the page (with lots of elements missing that have to be loaded in externally). However you should be able to use test all CSS you write on this page!
 
-##global files
+#global files
 
 ##frontend.html 
 is the code that will be embeded into the webpage. It contains functions that will implement all the functionality that a designer requests per page. The purpose of this code is to either create new elements or hide elements that exist currently or to apply classes to exisiting elements. You should not use Javascript for any other purpose!
@@ -45,4 +45,16 @@ Is loaded in externally and is used to style up the classes that you applied in 
 This decision was made to make the code alot more readable and to ensure modularity so that we can load in specific functions as needed.
 
 ##lightbox.html
-This code should be embeded in a seperate HTML block. 
+This code should be embeded in a seperate HTML block.
+
+##assets
+Store assets that will be used across courses here (images/icons)
+
+###fonts
+Store fonts that will be used across multiple courses here.
+
+###icons
+Stores that will be used across mutliple courses here.
+
+###images
+Stores images that will be used across multiple courses here
