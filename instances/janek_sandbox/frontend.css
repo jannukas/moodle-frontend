@@ -1,9 +1,5 @@
-h3 {
+.summary h3 {
 	color: red !important;
-}
-
-p {
-	color: green;
 }
 
 .iconlarge {
