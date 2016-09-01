@@ -36,6 +36,10 @@ Go back to the original checked out folder and copy the *theme.css* file. Now ad
 
 Go to the *.htm* you created and it should load the page (with lots of elements missing that have to be loaded in externally). However you should be able to use test all CSS you write on this page!
 
+##Once you've finished
+
+After you have finished writing your CSS ensure that the .html and .css file gets added to Github **Don't add the .htm file or the source folder.** Then go into the HTML file and link to the 'development' CSS for testing or 'production' if it's ready to go live. Now copy the .html code back into the webpage and your changes should be reflected.
+
 #Explaination of files
 
 ##frontend.html 
