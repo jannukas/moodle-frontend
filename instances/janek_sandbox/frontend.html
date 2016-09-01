@@ -59,9 +59,10 @@ function replaceFileIconsCSS(name, location) {
 	$(".activityinstance").each(function(index, value){
 		var instanceName = $(value).eq(0).text();
 		if(instanceName.indexOf(name) !== -1){
-			$(this).find("img").remove();
-			var icon = $("<i class=\"icon-a iconlarge\"/>");
-			$(this).find('iconlarge').css('background-image')
+			$(this).find("img").css('display','none')
+			var icon = $("<i class=\"icon-a iconlarge\"/>");;
+			$(this).find('.instancename').css('position','absolute');
+			$(this).find('.instancename').css('top','25px');
 			$(this).prepend(icon);
 		}
 	});	
