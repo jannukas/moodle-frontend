@@ -59,6 +59,7 @@ function replaceFileIconsCSS(name, location) {
 			$(this).find("img").remove();
 			$(this).find('a').css('display','none');
 			var icon = $("<i class=\"icon-a iconlarge\"/>");
+			$(this).find('iconlarge').css('background-image')
 			$(this).prepend(icon);
 		}
 	});	
