@@ -4,17 +4,17 @@
 	// DEVELOPMENT
 	//loadCSS("https://rawgit.com/qwerty1829/moodle_frontend/master/theme.css");
 	// LOCAL
-	loadCSS("Course_%20Janek%20sandbox_files/theme.css");
+	loadCSS("frontend.css");
 
-	function loadCSS(location){
-		console.log('loading css from ', location);
-		$("head").append("<link>");
-		var css = $("head").children(":last");
-		css.attr({
-		      rel:  "stylesheet",
-		      type: "text/css",
-		   href: location
-		});
+	function loadCSS(url){
+		console.log(url);
+		var head = document.getElementsByTagName('head')[0],
+   		link = document.createElement('link');
+		link.type = 'text/css';
+   		link.rel = 'stylesheet';
+   		link.href = url;
+   		head.appendChild(link);
+   		return link;
 	}
 </script>
 
