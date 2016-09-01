@@ -2,6 +2,8 @@
 
 To begin you must have this repositry either checked out or at the very least download the zip and then have a developer (Simon, Louise or Paul) help you at a later stage.
 
+**Before you start you should consider how much of the page you want to update.** If it's only a few specific elements it's probably easier to do it directly on the page. You should only use this approach if you are creating a theme that you want to use across multiple courses or if you want to do something specific.
+
 ##Create a new folder with your page
 
 Go inside the 'instances' folder and then create a new folder with the name of your course.
