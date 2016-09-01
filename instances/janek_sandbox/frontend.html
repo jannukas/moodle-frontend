@@ -1,11 +1,11 @@
 <script>
 
 	// PRODUCTION
-	// loadCSS("https://cdn.rawgit.com/qwerty1829/moodle_frontend/master/theme.css"); 
+	// loadCSS("https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/theme.css"); 
 	// DEVELOPMENT
-	//loadCSS("https://rawgit.com/qwerty1829/moodle_frontend/master/theme.css");
+	loadCSS("https://rawgit.com/qwerty1829/moodle-frontend/master/instances/janek_sandbox/theme.css");
 	// LOCAL
-	loadCSS("frontend.css");
+	// loadCSS("frontend.css");
 
 	// loads in icons to use in HTML
 	loadCSS("https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/assets/fonts/ELCicons/css/ELCicons.css")
@@ -22,7 +22,7 @@
 	}
 </script>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.core.min.js" type="text/javascript"></script>
 
 <script>
@@ -32,13 +32,14 @@
 
 	// enter the string you want it to contain and then the location of the image to replace with.
 	// replaceFileIcons("hank","https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png");
-	// replaceFileIcons("lesson", "https://rawgit.com/qwerty1829/moodle_frontend/master/icons/iLesson.png");
+	// replaceFileIcons("lesson", "https://rawgit.com/qwerty1829/moodle-frontend/master/icons/iLesson.png");
+	 replaceFileIconsCSS("Wiki", "https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/assets/icons/writing.png");
 
 	browserType();
 
-	// run at start to ensure all accordions are consistently closed. Comment out both lines to remove
-	closeOtherAccordions(this);
-	$(document).on('click', 'ul.topics>li', function(){ closeOtherAccordions(this); });
+	// // run at start to ensure all accordions are consistently closed. Comment out both lines to remove
+	// closeOtherAccordions(this);
+	// $(document).on('click', 'ul.topics>li', function(){ closeOtherAccordions(this); });	
     
 
 function replaceFileIcons(name, location) {
@@ -49,6 +50,16 @@ function replaceFileIcons(name, location) {
 			$(iconImage.first().attr("src",location));
 		}
 	});
+}
+
+function replaceFileIconsCSS(name, location) {
+	$(".activityinstance").each(function(index, value){
+		var instanceName = $(value).eq(0).text();
+		if(instanceName.indexOf(name) !== -1){
+			var iconImage = $(this).find("img");
+			$(iconImage.first().attr("src",location));
+		}
+	});	
 }
 
 function closeOtherAccordions(context){
@@ -71,4 +82,4 @@ function drawLogo(location) {
 	logo.css("width", 50).css("height", 50);
 }
 </script>
-<script type="text/javascript" src="https://iddkingsonline.com/fancyapps/source/jquery.fancybox.js?v=2.1.5"></script> -->
+<script type="text/javascript" src="https://iddkingsonline.com/fancyapps/source/jquery.fancybox.js?v=2.1.5"></script>
