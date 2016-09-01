@@ -11,4 +11,5 @@
 
 .iconlarge::before {
  	font-size:40px;
+ 	background-image: none;
 }
