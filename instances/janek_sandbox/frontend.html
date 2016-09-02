@@ -36,7 +36,10 @@
 	// enter the string you want it to contain and then the location of the image to replace with.
 	// replaceFileIcons("hank","https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png");
 	// replaceFileIcons("lesson", "https://rawgit.com/qwerty1829/moodle-frontend/master/icons/iLesson.png");
-	 replaceFileIconsCSS("Wiki", "https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/assets/icons/writing.png");
+	 replaceFileIconsCSS("Gallery", "a");
+	 replaceFileIconsCSS("Read", "https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/assets/icons/writing.png");
+	 replaceFileIconsCSS("Live", "https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/assets/icons/writing.png");
+	 replaceFileIconsCSS("Grammar", "https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/assets/icons/writing.png");
 
 	// browserType();
 
@@ -55,12 +58,12 @@ function replaceFileIcons(name, location) {
 	});
 }
 
-function replaceFileIconsCSS(name, location) {
+function replaceFileIconsCSS(name, code) {
 	$(".activityinstance").each(function(index, value){
 		var instanceName = $(value).eq(0).text();
 		if(instanceName.indexOf(name) !== -1){
 			$(this).find("img").css('display','none')
-			var icon = $("<i class=\"icon-a iconlarge\"/>");;
+			var icon = $("<i class=\"icon-" + code + " iconlarge\"/>");;
 			$(this).find('.instancename').css('position','absolute');
 			$(this).find('.instancename').css('top','25px');
 			$(this).prepend(icon);
