@@ -36,6 +36,8 @@
 
 	browserType();
 
+	replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/core/1471328846/f/png-24","https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png");
+
 	// run at start to ensure all accordions are consistently closed. Comment out both lines to remove
 	closeOtherAccordions(this);
 
@@ -54,6 +56,16 @@ function replaceFileIcons(name, location) {
 	});
 }
 
+function replaceFileIconsByUrl(original, replace) {	
+	$(".activityinstance").each(function(index, value){
+		var iconImage = $(this).find("img");
+		if($(iconImage).attr('src') == original){
+		console.log($(iconImage).attr('src'));
+		$(iconImage.attr("src",replace));
+	}
+	});
+}
+
 function replaceProgressBar(){
 	console.log($(".progressBarProgressTable"));
 	var numElements = $(".progressBarCell").size();
@@ -66,7 +78,6 @@ function replaceProgressBar(){
 			$(this).css("background-color","transparent");
 			// $(this).css("background","url('https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png')");
 		});
-		
 		var percentComplete = (completedElements/numElements)*160 + '%';
 		console.log(percentComplete);
 		$(".progressBarProgressTable").css("background","url('https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bg.png')");
