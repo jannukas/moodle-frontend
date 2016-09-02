@@ -38,7 +38,8 @@
 
 	// run at start to ensure all accordions are consistently closed. Comment out both lines to remove
 	closeOtherAccordions(this);
-	$(document).on('click', 'ul.topics>li', function(){ closeOtherAccordions(this); });
+
+	$(document).on('click', 'ul.topics li.section .the_toggle', function(){ closeOtherAccordions(this); });
     
 
 function replaceFileIcons(name, location) {
@@ -52,11 +53,10 @@ function replaceFileIcons(name, location) {
 }
 
 function closeOtherAccordions(context){
-	console.log(context);
-	$('ul.topics>li').each(function(index) {
-		if(this != context) {
-			$('.sectionopen').addClass('sectionclosed').removeClass('sectionopen');
-			$('.toggle_open').addClass('toggle_closed').removeClass('toggle_open');
+	$('ul.topics li.section').each(function(index) {
+		if(!($(this).is(context))) {
+			$(this).find('.sectionopen').addClass('sectionclosed').removeClass('sectionopen');
+			$(this).find('.toggle_open').addClass('toggle_closed').removeClass('toggle_open');
 		}
 	});
 }
