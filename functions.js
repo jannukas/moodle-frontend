@@ -46,7 +46,6 @@ function replaceProgressBar(){
 		$(".completition").css("top", 30);
 		$(".completition").css("margin-left", -70);
 		$(".completition").css("text-align", "left");
-		console.log($(".completition").css("left");
 }
 
 function closeOtherAccordions(context){
