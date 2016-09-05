@@ -40,7 +40,7 @@ function replaceProgressBar(){
 		$(".progressBarHeader").css('display',"none")
 		var bus = $("<img class='completition' src='https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bus.png'/>");
 		$(".progressBarProgressTable").prepend(bus);
-		$(".completition").css("left", 100%);
+		$(".completition").css("left", 100);
 		$(".completition").css("position", "absolute");
 		$(".completition").css("width", 40);
 		$(".completition").css("top", 30);
