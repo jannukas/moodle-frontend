@@ -18,6 +18,19 @@ function replaceFileIconsByUrl(original, replace) {
 	});
 }
 
+function replaceFileIconsCSS(name, code) {
+	$(".activityinstance").each(function(index, value){
+		var instanceName = $(value).eq(0).text();
+		if(instanceName.indexOf(name) !== -1){
+			$(this).find("img").css('display','none')
+			var icon = $("<i class=\"icon-" + code + " iconlarge\"/>");;
+			$(this).find('.instancename').css('position','absolute');
+			$(this).find('.instancename').css('top','25px');
+			$(this).prepend(icon);
+		}
+	});	
+}
+
 function replaceProgressBar(){
 	console.log($(".progressBarProgressTable"));
 	var numElements = $(".progressBarCell").size();
