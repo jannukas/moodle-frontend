@@ -12,8 +12,11 @@ function replaceFileIconsByUrl(original, replace) {
 	$(".activityinstance").each(function(index, value){
 		var iconImage = $(this).find("img");
 		if($(iconImage).attr('src') == original){
-		console.log($(iconImage).attr('src'));
-		$(iconImage.attr("src",replace));
+			$(this).find("img").css('display','none')
+			var icon = $("<i class=\"icon-" + replace + " iconlarge\"/>");;
+			$(this).find('.instancename').css('position','absolute');
+			$(this).find('.instancename').css('top','25px');
+			$(this).prepend(icon);
 	}
 	});
 }
