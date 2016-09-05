@@ -50,6 +50,9 @@ Is loaded in externally and is used to style up the classes that you applied in 
 
 This decision was made to make the code a lot more readable and to ensure modularity so that we can load in specific functions as needed.
 
+##functions.js
+This contains all the functions that are useable within moodle. Link to this page and the functions will be imported for you to use. NOTE: for production ensure that this is included in the HTML instead of being loaded.
+
 ##lightbox.html
 This code should be embedded in a seperate HTML block.
 
