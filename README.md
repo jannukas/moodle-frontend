@@ -1,6 +1,6 @@
 #How to create a new CSS file for a page
 
-To begin you must have this repositry either checked out or at the very least download the zip and then have a developer (Simon, Louise or Paul) help you at a later stage.
+To begin you must have this repository either checked out or at the very least download the zip and then have a developer (Simon, Louise or Paul) help you at a later stage.
 
 **Before you start you should consider how much of the page you want to update.** If it's only a few specific elements it's probably easier to do it directly on the page. You should only use this approach if you are creating a theme that you want to use across multiple courses or if you want to do something specific.
 
@@ -16,7 +16,7 @@ Copy the frontend.html file into your project.
 
 List at all the features that you want for your webpage (header recolouring, custom icons etc.). Go into the HTML file and uncomment all the features you want and ensure that they have been configured correctly.
 
-## ensure that CSS is being loaded in locally
+##Ensure that CSS is being loaded in locally
 
 Inside the loadCSS() function at the top ensure that code is being loaded in locally. So for *Janek sandbox* set the location to be *Course_%20Janek%20sandbox_files/theme.css*.
 
@@ -40,20 +40,20 @@ Go to the *.htm* you created and it should load the page (with lots of elements 
 
 After you have finished writing your CSS ensure that the .html and .css file gets added to Github **Don't add the .htm file or the source folder.** Then go into the HTML file and link to the 'development' CSS for testing or 'production' if it's ready to go live. Now copy the .html code back into the webpage and your changes should be reflected.
 
-#Explaination of files
+#Explanation of files
 
 ##frontend.html 
-is the code that will be embeded into the webpage. It contains functions that will implement all the functionality that a designer requests per page. The purpose of this code is to either create new elements or hide elements that exist currently or to apply classes to exisiting elements. You should not use Javascript for any other purpose!
+Is the code that will be embedded into the webpage. It contains functions that will implement all the functionality that a designer requests per page. The purpose of this code is to either create new elements or hide elements that exist currently or to apply classes to exisiting elements. You should not use Javascript for any other purpose!
 
 ##theme.css
 Is loaded in externally and is used to style up the classes that you applied in Javascript.
 
-This decision was made to make the code alot more readable and to ensure modularity so that we can load in specific functions as needed.
+This decision was made to make the code a lot more readable and to ensure modularity so that we can load in specific functions as needed.
 
 ##lightbox.html
-This code should be embeded in a seperate HTML block.
+This code should be embedded in a seperate HTML block.
 
-##instances
+##Instances
 Create instances of courses here e.g (Janek_sandbox). Within that folder add the 'Course_[your course]' html file and theme.css. 
 
 **Don't add the other 'Course_[your course] _files' here as it will make the repo massive** - Just keep them on your own computer.
@@ -65,7 +65,7 @@ Store assets that will be used across courses here (images/icons)
 Store fonts that will be used across multiple courses here.
 
 ###icons
-Stores that will be used across mutliple courses here.
+Store icons that will be used across multiple courses here.
 
 ###images
-Stores images that will be used across multiple courses here
+Store images that will be used across multiple courses here.
