@@ -6,7 +6,7 @@
 	var LOCAL = "frontend.css"
 	var DEVELOPMENT = "https://rawgit.com/qwerty1829/moodle-frontend/master/instances/janek_sandbox/frontend.css";
 	var PRODUCTION = "https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/frontend.css";
-	loadCSS(LOCAL);
+	loadCSS(DEVELOPMENT);
 
 	loadCSS("https://fonts.googleapis.com/css?family=Open+Sans");
 
@@ -33,10 +33,12 @@
 	// enter the string you want it to contain and then the location of the image to replace with.
 	// replaceFileIcons("hank","https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png");
 	// replaceFileIcons("lesson", "https://rawgit.com/qwerty1829/moodle-frontend/master/icons/iLesson.png");
-	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/core/1471328846/f/html-24", "a");
-	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/data/1471328846/icon", "j");
-	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/forum/1471328846/icon", "bus");
+	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/core/1471328846/f/html-24", "a"); // page
+	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/data/1471328846/icon", "j"); // 3 blocks on head
+	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/forum/1471328846/icon", "bus");  // messaging
 	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/choice/1471328846/icon", "umbrella");
+	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/assign/1471328846/icon", "phone"); 
+	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/workshop/1471328846/icon", "homew");
 
 	 replaceProgressBar();
 
