@@ -45,7 +45,38 @@
 
 	// // run at start to ensure all accordions are consistently closed. Comment out both lines to remove
 	// closeOtherAccordions(this);
-	// $(document).on('click', 'ul.topics>li', function(){ closeOtherAccordions(this); });	
+	// $(document).on('click', 'ul.topics>li', function(){ closeOtherAccordions(this); });
+
+	function replaceProgressBar(){
+	console.log($(".progressBarProgressTable"));
+	var numElements = $(".progressBarCell").size();
+	var completedElements = 0;
+	console.log(numElements);
+		$(".progressBarCell").each(function(index){
+			if($(this).css("background-color") == "rgb(115, 168, 57)"){
+				completedElements++;
+			}
+			$(this).css("background-color","transparent");
+			// $(this).css("background","url('https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png')");
+		});
+		var percentComplete = (completedElements/numElements)*160 + '%';
+		console.log(percentComplete);
+		$(".progressBarProgressTable").css("background","url('https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bg.png')");
+		$(".progressBarProgressTable").css("background-size", "contain");
+		$(".progressBarProgressTable").css("background-repeat", "no-repeat");
+		$(".progressBarProgressTable").css("position", "relative");
+		$(".progressBarProgressTable").css("height", 70);
+		$(".progressBarHeader").css('display',"none")
+		var bus = $("<img class='completition' src='https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bus.png'/>");
+		$(".progressBarProgressTable").prepend(bus);
+		$(".completition").css("left", 100%);
+		$(".completition").css("position", "absolute");
+		$(".completition").css("width", 40);
+		$(".completition").css("top", 30);
+		$(".completition").css("margin-left", -70);
+		$(".completition").css("text-align", "left");
+		console.log($(".completition").css("left");
+}
     
 
 function replaceFileIcons(name, location) {
