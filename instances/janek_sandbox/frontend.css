@@ -26,7 +26,19 @@
 	color: #06314d;
 }
 
+.summary-progress {
+  position: relative;
+  background-image: "https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bg.jpg";
+  height: 50px;
+  background-size: contain;
+}
 
+.summary-progress-icon {
+  position: relative;
+  background-image: "https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bg.jpg";
+  height: 50px;
+  background-size: contain;
+}
 
 @media (max-width: 600px) {
   #yui_3_17_2_1_1473171512459_226 {
