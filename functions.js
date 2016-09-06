@@ -98,4 +98,4 @@ ga('require', 'linker');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
 ga('siteLinker.send', 'pageview');
-ga('set', 'userId', {{USER_ID}});
+//ga('set', 'userId', {{USER_ID}});
