@@ -38,9 +38,13 @@ function setBackgroundImage(location) {
 	$(".row-fluid").css('background-image','url('+ location + ')');
 }
 
-function checkCourseAnchor() {
-
+function openAccordionByAnchor() {
+	var url = window.location.href;
+	if(url.indexOf('#') == -1) return;
+	var section = url.substring(url.indexOf('#'));
+	return section;
 }
+
 
 function replaceProgressBar() {
 	console.log($(".progressBarProgressTable"));
