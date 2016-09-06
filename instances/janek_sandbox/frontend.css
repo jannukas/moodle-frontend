@@ -33,3 +33,10 @@
     content:url("https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/assets/images/banner-header-mobile.png");
   }
 }
+
+ul.badges {
+    margin: 0;
+    list-style: none;
+    margin-left: 0px !important;
+    padding: 10px;
+    text-align: center;}
