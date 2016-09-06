@@ -17,3 +17,11 @@
 .instancename {
 	font-size:24px;
 }
+
+#page-header {
+	background-color: #06314d;
+}
+
+.coursesearchbox, .coursesearchbox::-webkit-input-placeholder, .coursesearchbox:-moz-placeholder, .coursesearchbox::-moz-placeholder, .coursesearchbox:-ms-input-placeholder  {
+	color: #06314d;
+}
