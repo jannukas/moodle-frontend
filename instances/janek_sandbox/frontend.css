@@ -22,6 +22,6 @@
 	background-color: #06314d;
 }
 
-.coursesearchbox, .coursesearchbox::-webkit-input-placeholder, .coursesearchbox:-moz-placeholder, .coursesearchbox::-moz-placeholder, .coursesearchbox:-ms-input-placeholder  {
+.coursesearchbox, .coursesearchbox.input::-webkit-input-placeholder, .coursesearchbox.input:-moz-placeholder, .coursesearchbox.input::-moz-placeholder, .coursesearchbox.input:-ms-input-placeholder  {
 	color: #06314d;
 }
