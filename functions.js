@@ -34,6 +34,10 @@ function replaceFileIconsCSS(name, code) {
 	});	
 }
 
+	function setBackgroundImage(location) {
+		$(".row-fluid").css('background-image','url('+ location + ')');
+	}
+
 function replaceProgressBar(){
 	console.log($(".progressBarProgressTable"));
 	var numElements = $(".progressBarCell").size();
