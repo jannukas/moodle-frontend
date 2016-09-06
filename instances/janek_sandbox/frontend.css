@@ -30,6 +30,6 @@
 
 @media (max-width: 600px) {
   .img-responsive {
-    content:url("https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png");
+    content:url("https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/assets/images/banner-header-mobile.png");
   }
 }
