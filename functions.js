@@ -9,7 +9,7 @@ function replaceFileIcons(name, location) {
 }
 
 function replaceFileIconsByUrl(original, replace) {	
-	$(".activityinstance").each(function(index, value){
+	$(".activityinstance").each(function(index, value) {
 		var iconImage = $(this).find("img");
 		if($(iconImage).attr('src') == original){
 			$(this).find("img").css('display','none')
@@ -22,7 +22,7 @@ function replaceFileIconsByUrl(original, replace) {
 }
 
 function replaceFileIconsCSS(name, code) {
-	$(".activityinstance").each(function(index, value){
+	$(".activityinstance").each(function(index, value) {
 		var instanceName = $(value).eq(0).text();
 		if(instanceName.indexOf(name) !== -1){
 			$(this).find("img").css('display','none')
@@ -34,17 +34,21 @@ function replaceFileIconsCSS(name, code) {
 	});	
 }
 
-	function setBackgroundImage(location) {
-		$(".row-fluid").css('background-image','url('+ location + ')');
-	}
+function setBackgroundImage(location) {
+	$(".row-fluid").css('background-image','url('+ location + ')');
+}
 
-function replaceProgressBar(){
+function checkCourseAnchor() {
+
+}
+
+function replaceProgressBar() {
 	console.log($(".progressBarProgressTable"));
 	var numElements = $(".progressBarCell").size();
 	var completedElements = 0;
 	console.log(numElements);
-		$(".progressBarCell").each(function(index){
-			if($(this).css("background-color") == "rgb(115, 168, 57)"){
+		$(".progressBarCell").each(function(index) {
+			if($(this).css("background-color") == "rgb(115, 168, 57)") {
 				completedElements++;
 			}
 			$(this).css("background-color","transparent");
@@ -68,7 +72,7 @@ function replaceProgressBar(){
 		$(".completition").css("text-align", "left");
 }
 
-function closeOtherAccordions(context){
+function closeOtherAccordions(context) {
 	$('ul.topics li.section').each(function(index) {
 		if(!($(this).is(context))) {
 			$(this).find('.sectionopen').addClass('sectionclosed').removeClass('sectionopen');

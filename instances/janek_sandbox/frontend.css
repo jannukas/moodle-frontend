@@ -22,6 +22,14 @@
 	background-color: #06314d;
 }
 
-.coursesearchbox, .coursesearchbox.input::-webkit-input-placeholder, .coursesearchbox.input:-moz-placeholder, .coursesearchbox.input::-moz-placeholder, .coursesearchbox.input:-ms-input-placeholder  {
+.coursesearchbox input, .coursesearchbox.input::-webkit-input-placeholder, .coursesearchbox.input:-moz-placeholder, .coursesearchbox.input::-moz-placeholder, .coursesearchbox.input:-ms-input-placeholder  {
 	color: #06314d;
+}
+
+
+
+@media (max-width: 600px) {
+  .img-responsive {
+    content:url("https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png");
+  }
 }
