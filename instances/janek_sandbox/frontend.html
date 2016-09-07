@@ -24,27 +24,13 @@
 </script>
 <script src='https://rawgit.com/qwerty1829/moodle-frontend/master/functions.js' type="text/javascript"></script>
 <script>
-	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/core/1471328846/f/html-24", "a"); // page
-	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/data/1471328846/icon", "j"); // 3 blocks on head
-	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/forum/1471328846/icon", "bus");  // messaging
-	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/choice/1471328846/icon", "umbrella");
-	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/assign/1471328846/icon", "phone"); 
-	 replaceFileIconsByUrl("https://keats.kcl.ac.uk/theme/image.php/keats/workshop/1471328846/icon", "homew");
+	 replaceFileIconsByUrl("core", "a"); // page
+	 replaceFileIconsByUrl("data", "j"); // 3 blocks on head
+	 replaceFileIconsByUrl("forum", "bus");  // messaging
+	 replaceFileIconsByUrl("choice", "umbrella");
+	 replaceFileIconsByUrl("assign", "phone"); 
+	 replaceFileIconsByUrl("workshop", "homew");
 
 	 addProgressBar();
 
-function replaceFileIconsByUrl(original, replace) {	
-	$(".activityinstance").each(function(index, value) {
-
-		var iconImage = $(this).find("img");
-		console.log(iconImage);
-		if($(iconImage).attr('src') == original){
-			$(this).find("img").css('display','none')
-			var icon = $("<i class=\"icon-" + replace + " iconlarge\"/>");;
-			$(this).find('.instancename').css('position','absolute');
-			$(this).find('.instancename').css('top','25px');
-			$(this).prepend(icon);
-		}
-	});
-} 
 </script>

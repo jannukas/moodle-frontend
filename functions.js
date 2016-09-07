@@ -10,14 +10,14 @@ function replaceFileIcons(name, location) {
 
 function replaceFileIconsByUrl(original, replace) {	
 	$(".activityinstance").each(function(index, value) {
-		var iconImage = $(this).find("img");
-		if($(iconImage).attr('src') == original){
-			$(this).find("img").css('display','none')
+		var iconImage = $(this).find("img").first();
+		if($(iconImage).attr('src').indexOf(original) !== -1){
+			$(this).find("img").first().css('display','none')
 			var icon = $("<i class=\"icon-" + replace + " iconlarge\"/>");;
 			$(this).find('.instancename').css('position','absolute');
 			$(this).find('.instancename').css('top','25px');
 			$(this).prepend(icon);
-	}
+		}
 	});
 }
 
@@ -47,10 +47,8 @@ function openAccordionByAnchor() {
 
 
 function replaceProgressBar() {
-	console.log($(".progressBarProgressTable"));
 	var numElements = $(".progressBarCell").size();
 	var completedElements = 0;
-	console.log(numElements);
 		$(".progressBarCell").each(function(index) {
 			if($(this).css("background-color") == "rgb(115, 168, 57)") {
 				completedElements++;
