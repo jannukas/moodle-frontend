@@ -29,14 +29,18 @@
 .summary-progress {
   position: relative;
   background-image: url("https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bg.jpg");
-  height: 35px;
+  height: 80px;
   background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin: 0 30px;
 }
 
 .summary-progress-icon {
   position: absolute;
+  height: 30px;
+  top: 40px;
   content:url("https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bus.png");
-
 }
 
 @media (max-width: 600px) {
