@@ -66,5 +66,13 @@ ul.badges {
 }
 
 .badges li .badge-name {
- display: none
+ display: none;
+}
+
+.block .content h3.eventskey {
+  display: none;
+}
+
+.block .calendar_filters li {
+  display: none;
 }
