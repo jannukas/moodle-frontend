@@ -28,7 +28,7 @@
 
 .summary-progress {
   position: relative;
-  background-image: "https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bg.jpg";
+  background-image: url("https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bg.jpg");
   height: 50px;
   background-size: contain;
 }
