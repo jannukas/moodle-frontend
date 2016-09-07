@@ -33,21 +33,18 @@
 
 	 addProgressBar();
 
-function addProgressBar() {
-	var numElements = $(".progressBarCell").size();
-	var completedElements = 0;
-	console.log(numElements);
-		$(".progressBarCell").each(function(index) {
-			if($(this).css("background-color") == "rgb(115, 168, 57)") {
-				completedElements++;
-			}
-			$(this).css("background-color","transparent");
-			// $(this).css("background","url('https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png')");
-		});
-		var percentComplete = (completedElements/numElements)*160 + '%';
-		var summaryProgress = $("<div class='summary-progress'></div>");
-		$(".summary").append(summaryProgress);
-		var progress = $("<img class='summary-progress-icon'/>");
-		$(".summary-progress").append(progress);
-}	 
+function replaceFileIconsByUrl(original, replace) {	
+	$(".activityinstance").each(function(index, value) {
+
+		var iconImage = $(this).find("img");
+		console.log(iconImage);
+		if($(iconImage).attr('src') == original){
+			$(this).find("img").css('display','none')
+			var icon = $("<i class=\"icon-" + replace + " iconlarge\"/>");;
+			$(this).find('.instancename').css('position','absolute');
+			$(this).find('.instancename').css('top','25px');
+			$(this).prepend(icon);
+		}
+	});
+} 
 </script>

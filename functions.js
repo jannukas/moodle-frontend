@@ -76,6 +76,23 @@ function replaceProgressBar() {
 		$(".completition").css("text-align", "left");
 }
 
+function addProgressBar() {
+	var numElements = $(".progressBarCell").size();
+	var completedElements = 0;
+		$(".progressBarCell").each(function(index) {
+			if($(this).css("background-color") == "rgb(115, 168, 57)") {
+				completedElements++;
+			}
+			$(this).css("background-color","transparent");
+		});
+		var percentComplete = (completedElements/numElements)*90 + '%';
+		var summaryProgress = $("<div class='summary-progress'></div>");
+		$(".summary").first().append(summaryProgress);
+		var progress = $("<img class='summary-progress-icon'/>");
+		$(".summary-progress").append(progress);
+		$(".summary-progress-icon").css("left",percentComplete);
+}	
+
 function closeOtherAccordions(context) {
 	$('ul.topics li.section').each(function(index) {
 		if(!($(this).is(context))) {
