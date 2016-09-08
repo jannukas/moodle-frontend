@@ -93,7 +93,7 @@ function addProgressBar() {
 
 function closeOtherAccordions(context) {
 	$('ul.topics li.section').each(function(index) {
-		if(!($(this).is(context))) {
+		if(!($(this).find('.the_toggle').is(context))) {
 			$(this).find('.sectionopen').addClass('sectionclosed').removeClass('sectionopen');
 			$(this).find('.toggle_open').addClass('toggle_closed').removeClass('toggle_open');
 		}
