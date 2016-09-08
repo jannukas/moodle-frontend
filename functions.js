@@ -57,7 +57,6 @@ function replaceProgressBar() {
 			// $(this).css("background","url('https://keats.kcl.ac.uk/pluginfile.php/2038040/mod_resource/content/3/hank.png')");
 		});
 		var percentComplete = (completedElements/numElements)*160 + '%';
-		console.log(percentComplete);
 		$(".progressBarProgressTable").css("background","url('https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bg.png')");
 		$(".progressBarProgressTable").css("background-size", "contain");
 		$(".progressBarProgressTable").css("background-repeat", "no-repeat");
@@ -111,14 +110,14 @@ function drawLogo(location) {
 }
 
 
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+// })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-83714529-1', 'auto', {'name': 'siteLinker','allowLinker': true});
-ga('require', 'linker');
-ga('require', 'displayfeatures');
-ga('send', 'pageview');
-ga('siteLinker.send', 'pageview');
+// ga('create', 'UA-83714529-1', 'auto', {'name': 'siteLinker','allowLinker': true});
+// ga('require', 'linker');
+// ga('require', 'displayfeatures');
+// ga('send', 'pageview');
+// ga('siteLinker.send', 'pageview');
 //ga('set', 'userId', {{USER_ID}});
