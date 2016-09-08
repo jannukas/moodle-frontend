@@ -16,9 +16,9 @@
 
 .instancename {
 	/*font-size:24px;*/
-	font-size: 14px;
+	/*font-size: 14px;
    	padding-left: 20px;
-	line-height: 0px;
+	line-height: 0px;*/
 }
 
 #page-header {
@@ -50,11 +50,11 @@
   #yui_3_17_2_1_1473171512459_226 {
     content:url("https://cdn.rawgit.com/qwerty1829/moodle-frontend/master/assets/images/banner-header-mobile.png");
   }
-  .instancename {
+  /*.instancename {
     line-height: 24px;
     padding-right: 20px;
     top: 0px !important;
-  }
+  }*/
 }
 
 ul.badges {
