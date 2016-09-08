@@ -11,7 +11,8 @@
 }
 
 .iconlarge::before {
- 	font-size:40px;
+ 	font-size:28px;
+  color:#132c4d;
 }
 
 .instancename {
@@ -41,8 +42,8 @@
 
 .summary-progress-icon {
   position: absolute;
-  height: 30px;
-  top: 40px;
+  width: 35px;
+  top: 35px;
   content:url("https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bus.png");
 }
 
