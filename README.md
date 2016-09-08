@@ -59,6 +59,9 @@ This code should be embedded in a seperate HTML block.
 ##Instances
 Create instances of courses here e.g (Janek_sandbox). Within that folder add the 'Course_[your course]' html file and theme.css. 
 
+##popup.html
+Add to styles for popup/tooltip text.
+
 **Don't add the other 'Course_[your course] _files' here as it will make the repo massive** - Just keep them on your own computer.
 
 ##assets
