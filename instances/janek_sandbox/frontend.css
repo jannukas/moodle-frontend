@@ -89,3 +89,8 @@ ul.badges {
 .block .calendar_filters li {
   display: none;
 }
+
+.section .activity .actions {
+	top: 25px;
+}
+}
