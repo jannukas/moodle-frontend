@@ -85,3 +85,13 @@ ul.badges {
 .block .calendar_filters li {
   display: none;
 }
+
+@media (max-width: 350px) {
+	.iconlarge {
+		display: none;
+	}
+	.instancename {    
+		left: 0px;
+	}
+}
+	}
