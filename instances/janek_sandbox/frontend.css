@@ -94,3 +94,7 @@ ul.badges {
 		left: 0px;
 	}
 }
+
+body.format-topcoll.editing ul.ctopics .section .activity .actions {
+	position: absolute;
+}
