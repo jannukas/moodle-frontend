@@ -98,3 +98,9 @@ ul.badges {
 body.format-topcoll.editing ul.ctopics .section .activity .actions {
 	position: absolute;
 }
+
+.editing-title {
+	position: absolute;
+    	right: 80px;
+}
+}
