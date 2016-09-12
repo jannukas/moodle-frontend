@@ -5,16 +5,18 @@
 }
 
 .instancename {
-	top: 4px !important;
+	top: 8px !important;
+	font-size: 1.5em;
 }
 
 .iconlarge, img.iconlarge {
- 	width: 30px;
+ 	width: 45px;
+ 	height: 30px;
 	background-image: none;
 }
 
 .iconlarge::before {
- 	font-size:20px;
+ 	font-size:2.5em;
   	color:#132c4d;
 }
 
