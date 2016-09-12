@@ -100,3 +100,7 @@ ul.badges {
 body.format-topcoll.editing ul.ctopics .section .activity .actions {
 	position: absolute;
 }
+
+.section .activity .actions {
+	top: 8px;
+}
