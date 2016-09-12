@@ -89,11 +89,20 @@ ul.badges {
 }
 
 @media (max-width: 500px) {
+
+	.instancename {    
+		font-size: 1em;
+		
+	}
+}
+
+@media (max-width: 350px) {
 	.iconlarge {
 		display: none;
 	}
 	.instancename {    
 		left: 0px;
+		font-size: 1em;
 	}
 }
 
