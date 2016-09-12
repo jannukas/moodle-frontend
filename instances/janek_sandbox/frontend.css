@@ -88,7 +88,7 @@ ul.badges {
   display: none;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 500px) {
 	.iconlarge {
 		display: none;
 	}
