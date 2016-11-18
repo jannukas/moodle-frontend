@@ -31,7 +31,7 @@
 .summary-progress {
   position: relative;
   background-image: url("https://rawgit.com/qwerty1829/moodle-frontend/master/assets/images/progress_bg.jpg");
-  height: 80px;
+  height: 880px;
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
