@@ -113,3 +113,6 @@ body.format-topcoll.editing ul.ctopics .section .activity .actions {
 .section .activity .actions {
 	top: 8px;
 }
+.path-course-view .completionprogress {
+    margin-left: -125px;
+}
