@@ -117,3 +117,8 @@ body.format-topcoll.editing ul.ctopics .section .activity .actions {
     margin-left: -125px !important;
 	margin-right: 30px !important;
 }
+/*Video Scrollbar hide*/
+.no-overflow {
+    overflow: hidden;
+    padding-bottom: 1px;
+}
